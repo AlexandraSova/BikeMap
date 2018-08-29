@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="Карта" />
+        <item
+            android:id="@+id/nav_select_city"
+            android:icon="@drawable/ic_location_city"
+            android:title="Выбрать город" />
+        <item
+            android:id="@+id/nav_route"
+            android:icon="@drawable/ic_directions_bike"
+            android:title="Построить маршрут" />
+        <item
+            android:id="@+id/nav_manual"
+            android:icon="@drawable/ic_manual"
+            android:title="Инструкция"
+            />
+    </group>
+   </menu>

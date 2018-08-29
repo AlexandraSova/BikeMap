@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alexandra.bikemap.fragment.RouteFragment">
+
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/start_place"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:hint="Точка отправления"
+        />
+
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/finish_place"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:hint="Точка прибытия"
+        />
+
+    <ListView
+        android:id="@+id/placesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/finish_place">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="50dp"
+            android:src="@drawable/bikemapimg_clear"
+            android:alpha=".04"/>
+    </RelativeLayout>
+
+</RelativeLayout>

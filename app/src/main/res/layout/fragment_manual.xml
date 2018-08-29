@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingTop="60dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context="com.example.alexandra.bikemap.fragment.ManualFragment">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Инструкция пользователя"
+                android:textSize="29sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="1. Как построить маршрут?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="• Откройте раздел «Построить маршрут»
+        \n• Введите точку отправления и точку прибытия.
+        \nДля этого:
+\n      • Начните вводить адрес или название места
+\n      • Выберете необходимое место из списка предложенных
+\n• После ввода адресов маршрут построится автоматически"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="2. Что означает график высот?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:text="График высот представляет собой столбчатую диаграмму, каждый столбец которой соответствует высоте над уровнем моря.
+     \nСлева указана высота над уровнем моря в метрах. Таким образом можно просмотреть изменение высот по маршруту."
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="3. Как выбрать мой город?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="• Откройте раздел «Выбрать город»
+\n• Отобразится информация о текущем городе. При необходимости измените город
+\nДля этого:
+\n      • Начните вводить название города
+\n      • Выберете необходимый город из списка предложенных"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="4. Зачем выбирать город?"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Выбор города посволяет
+\n• Переместить карту на нужное место
+\n• Выводить подсказки мест только по вашему городу"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:alpha=".04"
+        android:padding="50dp"
+        android:src="@drawable/bikemapimg_clear" />
+</RelativeLayout>
